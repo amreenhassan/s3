@@ -1,0 +1,99 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensure both html and body take full height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111; /* Dark background */
+    color: #d40e0b;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #d50000, #000000); /* Red-Black Gradient */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Content Section */
+section.content {
+    padding: 50px;
+    text-align: center; /* Center text */
+    background-color: #222; /* Dark background for content */
+}
+
+.lyric-box {
+    background-color: rgba(255, 0, 0, 0.3); /* Semi-transparent red */
+    padding: 40px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.lyric-text {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.5;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #d10000;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
